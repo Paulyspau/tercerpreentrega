@@ -1,0 +1,63 @@
+/*Banner*/
+
+.banner {
+    background-image: url(../images_web/images/aromaterapia2.jpg);
+    height: calc(100vh - 100px);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+}
+
+.bannerContenido {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* .bannerContenido h2 {
+      
+  } */
+
+.resaltado1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: $color-blanco;
+}
+
+.resaltado2 {
+    color: black;
+    text-shadow: 1px 1px 1px $color-blanco;
+}
+
+.bannerContenido {
+    p {
+        font-size: 4rem;
+        text-transform: uppercase;
+        font-family: 'Rubic Mono one' sans-serif;
+        margin-bottom: 20px;
+        text-align: center;
+        color: black;
+        text-shadow: 1px 1px 1px white;
+    }
+
+    .boton {
+        margin-top: 10px;
+    }
+}

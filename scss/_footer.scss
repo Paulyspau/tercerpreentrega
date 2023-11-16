@@ -1,0 +1,42 @@
+/*footer*/
+
+.footer {
+    background-color: #212121;
+    color: $color-marfil;
+    padding: 20px 0;
+}
+
+.footerContenido {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.infocontacto p {
+    margin: 5px 0;
+    font-size: 1.2rem;
+}
+
+.redesSociales a {
+    margin: 5px 0;
+    font-size: 1.2rem;
+    color: $color-verde;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 1.5rem;
+
+    &:hover {
+        color: $color-verdeoscuro;
+    }
+}
+
+.footer i {
+    margin-right: 10px;
+}

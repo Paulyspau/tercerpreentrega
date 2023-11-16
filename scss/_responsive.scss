@@ -1,0 +1,70 @@
+/***************/
+
+/*Lo hacemos responsive:  */
+
+
+/*Vista tablet*/
+/*768px hasta 1023px*/
+
+@media (max-width:1023px) {
+    /*Header*/
+
+    .encabezado {
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .encabezado .boton {
+        display: none;
+    }
+
+    /*Banner*/
+
+    .bannerContenido p {
+        font-size: 2.5rem;
+    }
+
+    /*Aceites*/
+
+    .aceites {
+        margin: 5vh;
+        font-size: 2rem;
+    }
+
+    .aceites h3 .aceites p {
+        font-size: inherit;
+    }
+
+    .contenedorAceites {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /*Lideres*/
+
+    .contenedorGuias {
+        flex-direction: column;
+    }
+
+    /*Footer*/
+
+    .footerContenido {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /*Ajustes especificos para la vista movil*/
+    /*0 hasta 768px*/
+    @media (max-width: 768px) {
+        /*Aceites*/
+
+        .contenedorAceites {
+            grid-template-columns: 1fr;
+        }
+
+        .form-container>div {
+            width: 100%;
+        }
+    }
+
+}

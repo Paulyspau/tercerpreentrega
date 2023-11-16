@@ -1,0 +1,73 @@
+/* Header */
+
+@mixin anclas {
+    text-decoration: none;
+    color:black;
+}
+
+.encabezado {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+
+    h1 {
+        text-transform: uppercase;
+        font-weight: 700;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        font-size: 2.5rem;
+    }
+}
+
+.verde {
+    /* agregar estilo */
+    padding: 10px 20px;
+    font-size: 1.2rem;
+}
+
+.boton {
+    background-color: $color-verde;
+    color: $color-marfil;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 10px;
+
+    &:hover {
+        background-color: $color-verdeoscuro;
+    }
+}
+
+/* .tarjeta button {
+  background-color: #7ab730;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-top: 10px;
+  }
+  
+  .tarjeta button:hover {
+  background-color: #28a745;
+  } */
+
+.encabezado li {
+    list-style-type: none;
+    display: inline-block;
+
+    a {
+        @include anclas;
+        margin: 10px;
+      
+        font-size: 1.5rem;
+
+        &:hover {
+            color: aliceblue;
+        }
+    }
+}
